@@ -7,7 +7,7 @@ const corsConfig = {
             callback(new Error('Not allowed by CORS'));
         }
     },
-    credentials: true,
+    credentials: true, // credentials can be config seperately in middleware
 };
 
 module.exports = corsConfig;

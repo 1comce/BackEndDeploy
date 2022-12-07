@@ -1,3 +1,4 @@
+//middleware check credentials
 const allowedOrigins = require('../config/cors/allowedOrigins');
 const credentials = (req, res, next) => {
     const origin = req.headers.origin;

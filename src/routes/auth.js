@@ -4,7 +4,7 @@ const authController = require('../app/Controllers/authController');
 const verifyToken = require('../middleware/verifyJWT');
 // @route GET api/auth
 // @desc Check if user is logged in
-// @access Public
+// @access Private
 router.get('/', verifyToken, authController.auth);
 // @route GET api/auth/refresh
 // @desc Refresh token

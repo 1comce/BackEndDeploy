@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const argon2 = require('argon2');
 // @route GET api/auth
 // @desc Check if user is logged in
-// @access Public
+// @access Private
 const auth = async (req, res) => {
     try {
         const user = await User.findById(req.userId).select('-password -email -refreshToken');
